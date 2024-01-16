@@ -13,7 +13,7 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-top: 40px;
-  /* width: 100%; */
+
 }
 
 .nav-list {
@@ -37,10 +37,8 @@ body {
   font-weight: 700;
 }
 
-/* ---------------./navbar------------------------ */
-
 .header {
-  padding: 70px 0;
+  padding: 70px 0 70px 70px;
   font-weight: 700;
   color: #211b12;
 }
