@@ -2,12 +2,17 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
-.navbar {
+.container {
   max-width: 870px;
+  width: 100%;
+  margin: auto;
+}
+
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 40px auto 0;
+  margin-top: 40px;
   /* width: 100%; */
 }
 .imgbox {
@@ -37,4 +42,96 @@ body {
   font-weight: 700;
   
   
+}
+
+/* ---------------./navbar------------------------ */
+
+.header {
+  padding: 70px 0;
+  font-weight: 700;
+  color: #211b12;
+}
+
+.header_inner {
+  display: flex;
+}
+
+.header_img-box {
+  width: 212px;
+  height: 240px;
+  margin-right: 27px;
+}
+.header-img {
+  height: 100%;
+  margin-left: -14px;
+
+}
+
+
+
+
+
+.header_content {
+}
+.header_title {
+  font-size: 48px;
+  line-height: 125%;
+  letter-spacing: -1.44px;
+  margin-bottom: 8px;
+}
+
+.header_text {
+  font-size: 24px;
+  line-height: 135%;
+  letter-spacing: -0.48px;
+  margin-bottom: 24px;
+
+}
+.header_text>span {
+  color: #BF7506;
+}
+.header_bottom {
+  display: flex;
+}
+.header_btm-socials {
+  display: flex;
+  margin-right: 55px;
+}
+.header_btm-soc {
+  width: 40px;
+  height: 40px;
+}
+.header_btm-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  margin-right: 8px;
+  transition: all 0.2s;
+}
+.header_btm-link:last-child {
+  margin-right: 0;
+}
+.header_btm-link:hover {
+  scale: 1.2;
+  transition: all .5s;
+}
+
+.header_btm-download {
+  line-height: 24px;
+  padding: 7px 8px 5px;
+  gap: 4px;
+  transition: all 0.2s;
+}
+.header_btm-download:hover {
+  color: #BF7506;
+  transition: all .5s;
+}
+
+
+.header_btm-line {
+  width: 179px;
+  height: 2px;
+  background-color: #BF7506;
+  margin-top: 2px;
 }
