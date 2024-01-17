@@ -2,6 +2,16 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+
+.button {
+  font-weight: 700;
+  line-height: 24px;
+  padding: 7px 8px;
+  gap: 4px;
+  transition: all 0.2s;
+  border-bottom: 2px solid #BF7506;
+}
+
 .container {
   max-width: 870px;
   width: 100%;
@@ -103,20 +113,71 @@ body {
 }
 
 .header_btm-download {
-  line-height: 24px;
-  padding: 7px 8px 5px;
-  gap: 4px;
-  transition: all 0.2s;
+
 }
 .header_btm-download:hover {
   color: #BF7506;
   transition: all .5s;
 }
 
+/* portfolio */
 
-.header_btm-line {
-  width: 179px;
-  height: 2px;
-  background-color: #BF7506;
-  margin-top: 2px;
+.portfolio {
+  padding-bottom: 120px;
+}
+
+.portfolio_title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: -1.44px;
+  color: #BF7506;
+  margin-bottom: 32px;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  max-width: 399px;
+}
+.card_img {
+}
+.card_content {
+  padding: 16px 16px 0 16px;
+}
+.card_title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 135%;
+  letter-spacing: -0.48px;
+  color: #BF7506;
+  margin-bottom: 8px;
+}
+.tegs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+.teg {
+}
+.teg_link {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 5px 8px 4px;
+  border: 1px solid #DD9C3C;
+  border-radius: 4px;
+}
+.card_text {
+  line-height: 24px;
+  margin-bottom: 17px;
+}
+.card_buttons {
+  display: flex;
+
+  gap: 25px;
+}
+.card_btn {
+
 }
