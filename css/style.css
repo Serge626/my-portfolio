@@ -75,13 +75,16 @@ body {
 }
 
 .header_img-box {
+  display: flex;
   width: 212px;
   height: 240px;
   margin-right: 27px;
+  align-items: center;
+  justify-content: center;
 }
 .header-img {
-  height: 100%;
-  margin-left: -14px;
+  
+  width: 140%;
 }
 
 
@@ -148,15 +151,17 @@ body {
 }
 .cards {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
 }
 .card {
   max-width: 399px;
 }
 .card_img {
+  max-width: 100%;
 }
 .card_content {
-  padding: 16px 16px 0 16px;
+  padding: 16px 16px 0;
 }
 .card_title {
   font-size: 24px;
@@ -205,6 +210,10 @@ body {
 .about_img-box {
   border-radius: 20px;
   overflow: hidden;
+  margin-right: 20px;
+}
+.about_img {
+  width: 100%;
 }
 .about_desc {
   max-width: 454px;
@@ -258,13 +267,19 @@ body {
 .skills_tag:last-child {
   margin-right: 0;
 }
-.skills_tag-link {
-}
+
 
 /* feedback */
 
 .feedback {
+  position: relative;
   padding-bottom: 167px;
+}
+.feedback_img {
+  position: absolute;
+  top: 8%;
+  right: 0;
+  width: 27%;
 }
 .feedback_inner {
   max-width: 435px;
@@ -304,7 +319,7 @@ margin: 0 auto;
 
 }
 .input {
-  width: 435px;
+  width: 100%;
   height: 56px;
   border: 3px solid #E0DEDC;
   border-radius: 4px;
@@ -318,5 +333,201 @@ margin: 0 auto;
 .feedback_btn {
   display: flex;
   justify-content: flex-end;
+
+}
+
+/* footer */
+
+.footer {
+  margin-bottom: 16px;
+}
+
+.footer_text {
+  padding-bottom: 16px;
+text-align: center;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/* ------------------------------------------------------------------------------------- */
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 750px;
+  }
+  .card {
+    max-width: 360px;
+  }
+  .card_title {
+    font-size: 22px;
+  }
+  .header_btm-socials {
+    margin-right: 30px;
+  }
+  .card_content {
+    padding: 12px 8px 0;
+  }
+  .feedback_img {
+    width: 22%;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    max-width: 550px;
+  }
+  .header_title {
+    font-size: 36px;
+  }
+  .header_text {
+    font-size: 16px;
+    margin-bottom: 16px;
+  }
+  .button {
+    font-size: 12px;
+    padding: 7px 4px;
+  }
+  .header_btm-socials {
+    margin-right: 10px;
+  }
+  .header_btm-link {
+    padding: 4px;
+  }
+  .portfolio_title {
+    font-size: 36px;
+  }
+  .card_title {
+    font-size: 16px;
+  }
+  .link_bordered {
+    padding: 5px 4px 4px;
+  }
+  .card {
+    max-width: 265px;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .about_img-box {
+    width: 100%;
+    height: 460px;
+    margin: 0 0 20px;
+  }
+  .about_img {
+    /* object-fit: fill; */
+  }
+  
+  .feedback_img {
+    display: none;
+  }
+
+}
+
+@media (max-width: 660px) {
+  .container {
+    width: 90%;
+  }
+  .header {
+    
+    padding: 40px 0;
+  }
+  .header_bottom {
+    flex-direction: column;
+  }
+  .header_btm-socials {
+    margin-bottom: 8px;
+  }
+  .header_btn {
+    display: block;
+  }
+  .cards {
+    width: 100%;
+    /* align-items: center; */
+
+  }
+  .card {
+    width: 45%;
+    display: block;
+  }
+  .card_content {
+    padding: 8px 5px 0;
+  }
+  .tegs {
+    flex-wrap: wrap;
+  }
+  .teg {
+    margin: 0 2px 10px;
+  }
+  .skills_tags {
+    flex-wrap: wrap;
+  }
+  .skills_tag {
+    margin: 0 2px 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar_imgbox {
+    margin-bottom: 20px;
+  }
+  .header {
+    padding: 20px 0;
+  }
+  .header_inner {
+    align-items: center;
+    flex-direction: column;
+  }
+  .header_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header_bottom {
+    align-items: center;
+  }
+  .header_btm-socials {
+    margin-right: 0;
+  }
+  .portfolio_title {
+    font-size: 30px;
+    margin-bottom: 24px;
+  }
+  .about_img-box {
+    height: 390px;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    }
+    .nav-item {
+      margin: 0 0 10px;
+    }
+    .nav-item:last-child {
+      margin: 0;
+    }
+    .portfolio_title {
+      margin-bottom: 16px;
+    }
+    .cards {
+      flex-direction: column;
+    }
+    .card {
+      max-width: none;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    .card:last-child {
+      margin-bottom: 0;
+    }
+    .about_img-box {
+      height: 330px;
+    }
+
 
 }
